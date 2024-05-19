@@ -23,7 +23,7 @@ body {
 }
 
 .navbar {
-  @apply absolute right-0 top-0 z-50 flex min-h-screen w-2/3 translate-x-full rounded-l-xl bg-white transition-all md:static md:min-h-0 md:w-auto md:translate-x-0 md:bg-transparent;
+  @apply absolute right-0 top-0 z-50 flex min-h-screen w-2/3 translate-x-full rounded-l-xl bg-white transition-all md:static md:min-h-0 md:w-auto md:translate-x-0 md:bg-transparent hidden;
 }
 
 .navbar.active {
