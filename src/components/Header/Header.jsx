@@ -11,13 +11,13 @@ function Header() {
   };
 
   return (
-    <header className="py-4 md:py-6">
-      <div className="mx-auto flex max-w-xs flex-row content-center items-center justify-between md:max-w-3xl lg:max-w-5xl">
-        <a href="#" className="text-xl font-black uppercase md:text-2xl">
+    <header className="sticky bg-white inset-0 z-50 py-4 md:static md:py-6">
+      <div className="z-50 mx-auto flex max-w-xs flex-row content-center items-center justify-between md:max-w-3xl lg:max-w-5xl">
+        <a href="#" className="text-2xl font-black uppercase md:text-3xl">
           barbershop
         </a>
         <nav className={`navbar ${menuOpen ? "active" : ""}`}>
-          <ul className="mt-32 flex w-full flex-col items-center gap-4 md:mt-0 md:flex-row md:justify-center md:gap-2">
+          <ul className="z-50 mt-32 flex w-full flex-col items-center gap-4 md:mt-0 md:flex-row md:justify-center md:gap-2">
             <li className="absolute right-0 top-0 md:hidden">
               <button
                 className={`mr-6 mt-6 p-2 duration-500 ease-in-out ${menuOpen ? "rotate-90" : ""}`}
@@ -67,7 +67,7 @@ function Header() {
       </div>
       {menuOpen && (
         <div
-          className="absolute inset-0 z-40 bg-black bg-opacity-70 backdrop-blur-sm md:hidden"
+          className="absolute inset-0 z-40 min-h-screen bg-black bg-opacity-70 backdrop-blur-sm md:hidden"
           onClick={toggleMenu}
         ></div>
       )}

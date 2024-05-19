@@ -11,16 +11,17 @@ function HeroSections({ text, divClassName, imgClass }) {
       opacity: 1,
       duration: 0.6,
     });
+    gsap.killTweensOf("hero.section-text");
   });
 
   return (
     <div
-      className={`flex flex-col items-center justify-center gap-4 md:flex-row ${divClassName}`}
+      className={`flex items-center justify-center gap-4 flex-row ${divClassName}`}
     >
       <div
-        className={`size-56 rounded-xl bg-cover bg-center ${imgClass}`}
+        className={`md:size-56 size-32 rounded-xl bg-cover bg-center ${imgClass}`}
       ></div>
-      <h2 className="hero-section-text p-2 text-center text-4xl font-black uppercase md:w-1/2">
+      <h2 className="hero-section-text p-2 text-center text-xl md:text-4xl font-black uppercase w-1/2">
         {text}
       </h2>
     </div>

@@ -16,6 +16,8 @@ export default {
           'url("https://i.pinimg.com/564x/14/bc/72/14bc72112d5193074ebd4cf6d37ea6b8.jpg")',
         hero_pic_4:
           'url("https://i.pinimg.com/736x/9e/19/6c/9e196ca82244f0ef7810a02bfce895c0.jpg ")',
+        barbershop:
+          'url("https://images.pexels.com/photos/1319459/pexels-photo-1319459.jpeg?auto=compress&cs=tinysrgb&w=600")',
       },
     },
   },
