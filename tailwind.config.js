@@ -18,6 +18,12 @@ export default {
           'url("https://i.pinimg.com/736x/9e/19/6c/9e196ca82244f0ef7810a02bfce895c0.jpg ")',
         barbershop:
           'url("https://images.pexels.com/photos/1319459/pexels-photo-1319459.jpeg?auto=compress&cs=tinysrgb&w=600")',
+        barber1:
+          'url("https://images.pexels.com/photos/3031391/pexels-photo-3031391.jpeg?auto=compress&cs=tinysrgb&w=600")',
+        barber2:
+          'url("https://images.pexels.com/photos/2714273/pexels-photo-2714273.jpeg?auto=compress&cs=tinysrgb&w=600")',
+        barber3:
+          'url("https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=600")',
       },
     },
   },

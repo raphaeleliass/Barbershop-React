@@ -7,11 +7,11 @@ function Header() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    document.body.classList.toggle("hide-overflow");
+    document.body.classList.toggle("overflow-hidden");
   };
 
   return (
-    <header className="sticky bg-white inset-0 z-50 py-4 md:static md:py-6">
+    <header className="sticky inset-0 z-50 bg-white py-4 md:static md:py-6">
       <div className="z-50 mx-auto flex max-w-xs flex-row content-center items-center justify-between md:max-w-3xl lg:max-w-5xl">
         <a href="#" className="text-2xl font-black uppercase md:text-3xl">
           barbershop
@@ -37,12 +37,16 @@ function Header() {
               </a>
             </li>
             <li className="flex">
-              <a href="#" className="nav-links hidden md:flex">
+              <a href="#main" className="nav-links hidden md:flex">
                 About us
               </a>
             </li>
             <li className="flex">
-              <a href="#" className="nav-links md:hidden" onClick={toggleMenu}>
+              <a
+                href="#main"
+                className="nav-links md:hidden"
+                onClick={toggleMenu}
+              >
                 About us
               </a>
             </li>
@@ -67,7 +71,7 @@ function Header() {
       </div>
       {menuOpen && (
         <div
-          className="absolute inset-0 z-40 min-h-screen bg-black bg-opacity-70 backdrop-blur-sm md:hidden"
+          className="fixed inset-0 z-40 min-h-screen bg-black bg-opacity-70 backdrop-blur-sm md:hidden"
           onClick={toggleMenu}
         ></div>
       )}

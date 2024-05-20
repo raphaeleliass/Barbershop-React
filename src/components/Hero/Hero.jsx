@@ -63,7 +63,7 @@ function Hero() {
             />
           </section>
         </div>
-        <aside className="hero-aside h-32 rounded-xl bg-hero_pic_4 bg-cover bg-center shadow-xl md:static md:h-auto md:w-1/2 md:bg-center"></aside>
+        <aside className="hero-aside h-32 rounded-xl bg-hero_pic_4  bg-cover bg-center shadow-xl md:static md:h-auto md:w-1/2 md:bg-cover md:bg-center"></aside>
       </section>
       <div className="hero-punch flex flex-col text-center md:flex-row md:gap-4">
         <h2 className="text-5xl font-black uppercase md:text-6xl lg:text-7xl">
