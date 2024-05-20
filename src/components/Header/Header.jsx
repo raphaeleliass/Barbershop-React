@@ -51,6 +51,34 @@ function Header() {
               </a>
             </li>
             <li className="flex">
+              <a href="#team" className="nav-links hidden md:flex">
+                Team
+              </a>
+            </li>
+            <li className="flex">
+              <a
+                href="#team"
+                className="nav-links md:hidden"
+                onClick={toggleMenu}
+              >
+                Team
+              </a>
+            </li>
+            <li className="flex">
+              <a href="#gallery" className="nav-links hidden md:flex">
+                Gallery
+              </a>
+            </li>
+            <li className="flex">
+              <a
+                href="#gallery"
+                className="nav-links md:hidden"
+                onClick={toggleMenu}
+              >
+                Gallery
+              </a>
+            </li>
+            <li className="flex">
               <button className="cta-button hidden md:flex">
                 <a href="#">Contact</a>
               </button>

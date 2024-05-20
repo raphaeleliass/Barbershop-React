@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -15,26 +15,22 @@ function Team() {
       },
     });
     gsap.to(".main-team-card-2", {
-      
       opacity: 1,
       delay: 0.4,
       scrollTrigger: {
-        trigger: ".main-team-card-1",
+        trigger: ".main-team",
       },
     });
     gsap.to(".main-team-card-3", {
-      
       opacity: 1,
       delay: 0.5,
       scrollTrigger: {
-        trigger: ".main-team-card-2",
+        trigger: ".main-team",
       },
     });
 
     return () => {
-      gsap.killTweensOf(".main-team-card-1");
-      gsap.killTweensOf(".main-team-card-2");
-      gsap.killTweensOf(".main-team-card-3");
+      gsap.killTweensOf(null, { all: true });
     };
   }, []);
 
@@ -46,7 +42,7 @@ function Team() {
     <div className="main-team mx-auto flex max-w-xs flex-col items-center justify-center gap-2 md:max-w-3xl md:flex-row lg:max-w-5xl">
       <div
         id="card-1"
-        className={`team-card main-team-card-1 flex w-full cursor-pointer flex-col justify-end rounded-xl bg-barber1 bg-cover bg-center pb-6 pl-4 md:h-[500px] ${
+        className={`team-card main-team-card-1 bg-barber1 bg- flex w-full cursor-pointer flex-col justify-end rounded-xl bg-cover bg-center pb-6 pl-4 md:h-[500px] md:pl-8 lg:h-[550px] lg:pb-8 lg:pl-12 ${
           activeCard === "card-1" ? "active" : ""
         }`}
         onClick={() => handleCardClick("card-1")}
@@ -56,7 +52,7 @@ function Team() {
       </div>
       <div
         id="card-2"
-        className={`team-card main-team-card-2 flex h-14 w-full cursor-pointer flex-col justify-end rounded-xl bg-barber2 bg-cover bg-center pb-6 pl-4 md:h-[500px] md:w-1/4 ${
+        className={`team-card main-team-card-2 bg-barber2 bg- flex h-14 w-full cursor-pointer flex-col justify-end rounded-xl bg-cover bg-center pb-6 pl-4 md:h-[500px] md:w-1/4 md:pl-8 lg:h-[550px] lg:pb-8 lg:pl-12 ${
           activeCard === "card-2" ? "active" : ""
         }`}
         onClick={() => handleCardClick("card-2")}
@@ -66,7 +62,7 @@ function Team() {
       </div>
       <div
         id="card-3"
-        className={`team-card main-team-card-3 flex h-14 w-full cursor-pointer flex-col justify-end rounded-xl bg-barber3 bg-cover bg-center pb-6 pl-4 md:h-[500px] md:w-1/4 ${
+        className={`team-card main-team-card-3 bg-barber3 bg- flex h-14 w-full cursor-pointer flex-col justify-end rounded-xl bg-cover bg-center pb-6 pl-4 md:h-[500px] md:w-1/4 md:pl-8 lg:h-[550px] lg:pb-8 lg:pl-12 ${
           activeCard === "card-3" ? "active" : ""
         }`}
         onClick={() => handleCardClick("card-3")}

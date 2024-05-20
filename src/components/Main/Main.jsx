@@ -4,6 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { useLayoutEffect } from "react";
 import Team from "./Team";
 import Gallery from "./Gallery";
+import Contact from "./Contact";
 
 function Main() {
   useLayoutEffect(() => {
@@ -23,15 +24,24 @@ function Main() {
         trigger: ".main-about",
       },
     });
+    gsap.to(".main-gallery", {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".main-gallery",
+      },
+    });
   }, []);
 
   return (
     <main
       id="main"
-      className="mx-auto mt-12 flex max-w-xs flex-col  justify-center md:mt-32 md:max-w-3xl  lg:max-w-5xl"
+      className="mx-auto flex max-w-xs flex-col justify-center md:max-w-3xl lg:max-w-5xl"
     >
-      <section className="main-about mt-32 flex flex-col gap-6 md:gap-10">
-        <h2 className="main-about-title text-center text-2xl font-black uppercase md:text-4xl">
+      <section
+        id="about"
+        className="main-about mt-32 flex flex-col gap-6 md:mt-32"
+      >
+        <h2 className="main-about-title text-center text-5xl font-black uppercase md:text-5xl">
           About us
         </h2>
         <About
@@ -40,14 +50,20 @@ function Main() {
           img="bg-barbershop"
         />
       </section>
-      <section className="main-team mt-32">
-        <h2 className="main-about-title md:mb-10 mb-6 text-center text-2xl  font-black uppercase md:text-4xl">
+      <section id="team" className="main-team mt-32">
+        <h2 className="main-about-title mb-12 text-center text-5xl font-black uppercase md:text-5xl">
           Our Team
         </h2>
         <Team />
       </section>
-      <section className="mt-32">
-        <Gallery/>
+      <section id="gallery" className="main-gallery mt-32 flex flex-col gap-12">
+        <h2 className="main-about-title text-center text-5xl font-black uppercase md:text-5xl">
+          Gallery
+        </h2>
+        <Gallery />
+      </section>
+      <section className="mt-56">
+        <Contact />
       </section>
     </main>
   );

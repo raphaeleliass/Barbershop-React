@@ -76,3 +76,13 @@ body {
 .team-card.active {
   @apply h-96 text-2xl font-black text-white shadow-xl duration-300 ease-in-out md:h-[500px] md:w-3/4 md:text-4xl lg:h-[550px];
 }
+
+.gallery-div-1 {
+  @apply opacity-0;
+}
+.gallery-div-2 {
+  @apply opacity-0;
+}
+.gallery-div-3 {
+  @apply opacity-0;
+}
