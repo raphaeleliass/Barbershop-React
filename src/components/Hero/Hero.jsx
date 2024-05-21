@@ -40,7 +40,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="z-30 flex flex-col items-center justify-center md:mt-12 mt-6">
+    <div className="z-30 flex flex-col items-center justify-center md:mt-12">
       <section className="z-30 gap-4 flex w-full max-w-xs flex-col md:max-w-3xl md:flex-row lg:max-w-5xl">
         <div className="z-30 flex flex-col items-center rounded-xl lg:w-1/2">
           <a href="#" className="hero-logo">

@@ -80,12 +80,12 @@ function Header() {
             </li>
             <li className="flex">
               <button className="cta-button hidden md:flex">
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
               </button>
             </li>
             <li className="flex">
               <button className="cta-button md:hidden" onClick={toggleMenu}>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
               </button>
             </li>
           </ul>

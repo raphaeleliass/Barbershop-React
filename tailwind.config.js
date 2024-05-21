@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         Poppins: ["Poppins", "Sans-Serif", "Arial"],
-        Inter: ["Poppins", "Sans-Serif", "Arial"],
+        Inter: ["Inter", "Sans-Serif", "Arial"],
       },
       backgroundImage: {
         hero_pic_1:

@@ -62,7 +62,7 @@ function Main() {
         </h2>
         <Gallery />
       </section>
-      <section className="mt-56">
+      <section id="contact" className="mt-56">
         <Contact />
       </section>
     </main>
